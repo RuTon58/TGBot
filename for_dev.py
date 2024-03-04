@@ -39,10 +39,28 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS products_keys (
 #                (2, 1))
 # cursor.execute("INSERT INTO products_keys(product_description_id, product_id) VALUES (?, ?)",
 #                (3, 1))
-cursor.execute("DELETE FROM products_description")
-print(cursor.execute("SELECT * FROM products_description").fetchall())
+# cursor.execute("DELETE FROM products_description")
+cursor.execute("DELETE FROM user_orders")
+# cursor.execute("DELETE FROM products")
+# cursor.execute("DELETE FROM products_keys")
 
-# connection.commit()
+# cursor.execute("INSERT INTO products_description(name, discription, image, price) VALUES (?, ?, ?, ?)",
+#                ("Відео", "Тут ви придбаєте відео контент", "images/video.png", 100))
+# cursor.execute("INSERT INTO products_description(name, discription, image, price) VALUES (?, ?, ?, ?)",
+#                ("Музика", "Тут ви придбаєте музичний контент", "images/music.jpg", 100))
+# cursor.execute("INSERT INTO products(name, content_path) VALUES (?, ?)",
+#                ("Музика", "content/music.mp3"))
+# cursor.execute("INSERT INTO products(name, content_path) VALUES (?, ?)",
+#                ("Відео", "content/video.mp4"))
+# cursor.execute("INSERT INTO products_keys(product_description_id, product_id) VALUES (?, ?)",
+#                (4, 3))
+# cursor.execute("INSERT INTO products_keys(product_description_id, product_id) VALUES (?, ?)",
+#                (5, 2))
+connection.commit()
+
+print(cursor.execute("SELECT * FROM products_description").fetchall())
+print(cursor.execute("SELECT * FROM products").fetchall())
+print(cursor.execute("SELECT * FROM products_keys").fetchall())
 
 db.close_connection()
 

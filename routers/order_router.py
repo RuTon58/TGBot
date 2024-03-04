@@ -56,6 +56,5 @@ async def get_order_content(callback: CallbackQuery):
     await callback.message.answer_document(
         document=FSInputFile(
             path=product_path
-        ),
-        protect_content=True
+        )
     )
