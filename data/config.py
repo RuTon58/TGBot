@@ -4,27 +4,27 @@ TOKENS = {
 }
 
 MESSAGES = {
-    "START": "start message",
+    "START": 'Привіт {name}!\nЦе бот для продажу віртуальних товарів.\nНажміть "Товари 📋" для перегляду наших продуктів',
     "PRODUCT": "{name}\n{discription}\n{price} ₴",
-    "NULL_CART": "Cart is null",
-    "SHOW_CART": "Cart:",
+    "NULL_CART": "Кошик порожній",
+    "SHOW_CART": "Кошик:",
     "START_CHECKOUT": "{number}. {name} - {price} ₴\n",
-    "PAY_SUCCSESS": "Succsess pay",
-    "CHECKOUT": "Checkout",
-    "ORDER": "Your orders",
-    "NONE_ORDER": "Your dont have orders",
+    "PAY_SUCCSESS": "Оплата успішна",
+    "CHECKOUT": "Оформлення замовлення",
+    "ORDER": "Ваші купілені товари",
+    "NONE_ORDER": "У Вас немає куплених товарів",
 }
 
 BUTTONS = {
-    "PRODUCT": "Pruduct",
-    "CART": "Cart",
-    "CHECKOUT": "Checkout",
-    "ADD_TO_CART": "Add",
-    "DELETE_FROM_CART": "Delete",
+    "PRODUCT": "Товари 📋",
+    "CART": "Кошик 🧺",
+    "CHECKOUT": "Оформити замовлення 💵",
+    "ADD_TO_CART": "Додати до кошика ➕",
+    "DELETE_FROM_CART": "Видалити з кошика ➖",
     "CART_ITEM_TITLE": "{name} - {price} ₴",
-    "CART_CLEAR": "Clear cart",
-    "ORDER_PRODUCT": "Buying",
-    "ORDERS": "Order",
+    "CART_CLEAR": "Очистити кошик 🗑️",
+    "ORDER_PRODUCT": "Куплено ✔️",
+    "ORDERS": "Куплені товари 🚀",
     "ORDERS_ITEM": "{count}. {name}",
 }
 

@@ -39,8 +39,8 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS products_keys (
 #                (2, 1))
 # cursor.execute("INSERT INTO products_keys(product_description_id, product_id) VALUES (?, ?)",
 #                (3, 1))
-cursor.execute("DELETE FROM user_orders")
-print(cursor.execute("SELECT * FROM user_orders").fetchall())
+cursor.execute("DELETE FROM products_description")
+print(cursor.execute("SELECT * FROM products_description").fetchall())
 
 # connection.commit()
 

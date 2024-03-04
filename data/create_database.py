@@ -2,7 +2,7 @@ from Classes import Database
 
 
 def create_database(database: Database) -> None:
-    cursor, connection = database.open_conection()
+    cursor, connection = database.open_connection()
 
     cursor.execute("""CREATE TABLE IF NOT EXISTS products_description (
                id INTEGER PRIMARY KEY AUTOINCREMENT,

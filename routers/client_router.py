@@ -21,7 +21,7 @@ database = Database()
 
 @client_router.message(CommandStart())
 async def start(message: Message):
-    await message.answer(text=MESSAGES["START"], 
+    await message.answer(text=MESSAGES["START"].format(name=message.from_user.full_name), 
                          reply_markup=client_markups.start_markup())    
     
 
