@@ -4,9 +4,12 @@ from Classes import Database
 
 from aiogram import Bot, Dispatcher
 from routers import client_router
+from data.create_database import create_database
 
 
 db = Database("data/sqlite_database.db")
+create_database(db)
+
 bot = Bot(token=TOKENS["BOT"])
 dp = Dispatcher()
 
