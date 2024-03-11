@@ -1,6 +1,6 @@
 TOKENS = {
-    "BOT": "5137718377:AAGpyGkP2riOKt_IAgYAITMOEYaQptt8nG4",
-    "PAY": "1661751239:TEST:T08k-8bn0-ZW87-odSI",
+    "BOT": "",
+    "PAY": "",
 }
 
 MESSAGES = {
