@@ -2,7 +2,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from data import BUTTONS, BUTTONS_DATA
 
-
+# Функція для створення списку куплених продуктів
 def show_order(order_list: list[tuple]) -> InlineKeyboardMarkup:
     inline_list = []
     number = 0
